@@ -33,6 +33,6 @@ def get_current_time():
 # 主程序入口：当脚本直接运行时执行以下代码
 if __name__ == "__main__":
     # 启动 MCP 服务，使用 SSE（Server-Sent Events）传输协议，监听端口 9000
-    # mcp.run(transport="sse", port=9000)
+    mcp.run(transport="sse", port=9000)
     # 注释掉的代码：使用标准输入输出（stdio）传输协议启动服务
-    mcp.run(transport="stdio")
+    # mcp.run(transport="stdio")
